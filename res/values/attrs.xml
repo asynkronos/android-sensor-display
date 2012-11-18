@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- View styles -->
+	<attr name="pageBackground" format="reference" />
+	<attr name="pagePaddingLayout" format="reference" />
+	<attr name="textTitle" format="reference" />
+	<attr name="textTitleHidden" format="reference" />
+	<attr name="textSubheader" format="reference" />
+	<attr name="textLarge" format="reference" />
+	<attr name="textRegular" format="reference" />
+	<attr name="textCheckBox" format="reference" />
+	<attr name="textCurrentActivityGreen" format="reference" />
+	<attr name="whiteBackground" format="reference" />
+	<attr name="button" format="reference" />
+	<attr name="list" format="reference" />
+	<attr name="listItem" format="reference" />
+	<attr name="listDivider" format="reference" />
+	<attr name="editText" format="reference"/>
+	
+	<!-- Attributes -->
+	<attr name="pageMargin" format="reference|dimension" />
+	<attr name="contentLeftMargin" format="reference|dimension" />
+	
+	<declare-styleable name="com.asynkronos.android.sensordisplay.Slider">
+		<attr name="min_value" format="integer"/>
+		<attr name="max_value" format="integer"/>
+		<attr name="divide_in" format="integer" />
+		<attr name="current_value" format="integer" />
+		<attr name="step" format="float" />
+	</declare-styleable>
+	    <declare-styleable name="ProgressBar">
+        <attr name="android:progressDrawable" />
+        <attr name="android:minWidth" />
+        <attr name="android:maxWidth" />
+        <attr name="android:minHeight" />
+        <attr name="android:maxHeight" />
+        <attr name="android:max" />
+        <attr name="android:progress" />
+        <attr name="android:secondaryProgress" />
+    </declare-styleable>
+    <declare-styleable name="SeekBar">
+        <attr name="android:thumb" />
+        <attr name="android:thumbOffset" />
+    </declare-styleable>
+    <declare-styleable name="Theme">
+        <attr name="android:disabledAlpha" />
+    </declare-styleable>
+    	<declare-styleable name="com.admob.android.ads.AdView">
+		<attr name="backgroundColor" format="color" />
+		<attr name="primaryTextColor" format="color" />
+		<attr name="secondaryTextColor" format="color" />
+		<attr name="keywords" format="string" />
+		<attr name="refreshInterval" format="integer" />
+	</declare-styleable>
+</resources>

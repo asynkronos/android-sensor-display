@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res/com.asynkronos.android.sensordisplay"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TextView  android:id="@+id/title" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text=""
+		style="@style/text_title_wh" />
+	<TextView  android:id="@+id/not_supported" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/no_support"
+		style="@style/readout_ind" android:visibility="gone"/>
+		
+	<TableLayout android:id="@+id/table" android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:stretchColumns="0,1">
+
+		<TableRow android:id="@+id/xrow" android:paddingBottom="2dp">
+			<TextView android:id="@+id/xlabel" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="@string/xaxis_accel_lb"
+				style="@style/readout_ind" />
+			<TextView android:id="@+id/xaxis" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" style="@style/readout"
+				android:text="" />
+		</TableRow>
+
+		<TableRow android:id="@+id/yrow"  android:paddingBottom="2dp" android:visibility="gone">
+			<TextView  android:id="@+id/ylabel" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="@string/yaxis_accel_lb"
+				style="@style/readout_ind" />
+			<TextView android:id="@+id/yaxis" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" style="@style/readout"
+				android:text="" />
+		</TableRow>
+
+		<TableRow android:id="@+id/zrow" android:paddingBottom="2dp" android:visibility="gone">
+			<TextView  android:id="@+id/zlabel" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="@string/zaxis_accel_lb"
+				style="@style/readout_ind" />
+			<TextView android:id="@+id/zaxis" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" style="@style/readout"
+				android:text="" />
+		</TableRow>
+		
+		<TableRow android:id="@+id/frow" android:paddingBottom="2dp" android:visibility="gone">
+			<TextView android:id="@+id/flabel"  android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="@string/force_accel_lb"
+				style="@style/readout_ind" />
+			<TextView android:id="@+id/force" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" style="@style/readout"
+				android:text="" />
+		</TableRow>
+		<LinearLayout android:id="@+id/clear_button_display" android:orientation="horizontal" 
+		  android:layout_width="wrap_content" android:layout_height="wrap_content">
+		  	<Button android:id="@+id/clear" 
+		  	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		  	android:text="@string/clear"
+		  	android:onClick="clickClearButton"/>
+		  </LinearLayout>
+		
+</TableLayout>
+
+</LinearLayout>
